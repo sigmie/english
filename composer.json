@@ -15,8 +15,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "sigmie/index": "^0.20",
-        "sigmie/shared": "^0.20"
+        "sigmie/sigmie": "*"
     },
     "autoload": {
         "psr-4": {
@@ -25,7 +24,10 @@
     },
     "suggest": {},
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "stable"
 }
